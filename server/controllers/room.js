@@ -45,6 +45,8 @@ export const getAvailableRooms = async (req, res) => {
         checkOutDate,
       ],
       (err, data) => {
+        console.log("queryError ", err);
+
         if (err) return res.status(500).json({ error: err.message });
 
         const aggregatedRooms = aggregateAvailableRoomsByRoomType(data);
