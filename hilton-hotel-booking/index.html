@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hilton London Heathrow Hotel</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./src/assets/css/global-header.css" />
+    <link rel="stylesheet" href="./src/assets/css/global-footer.css" />
+    <link rel="stylesheet" href="./src/assets/css/accesibility.css" />
+    <link rel="stylesheet" href="./src/assets/css/rooms-and-suites.css" />
+    <link rel="stylesheet" href="./src/assets/css/facilities.css" />
+    <link rel="stylesheet" href="./src/assets/css/index.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/assets/img/favicon.webp"
+      type="image/x-icon" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+    <script type="module" defer>
+      (() => {
+        const loader = document.getElementById("loader");
+        const scrollBar = document.querySelector(".scroll-bar");
+
+        console.log(loader);
+
+        loader.classList.add("none");
+        if (scrollBar) {
+          scrollBar.classList.remove("scroll-bar");
+        }
+      })();
+    </script>
+    <script async src="./src/assets/js/toggleHamburger.js" defer></script>
+  </body>
+</html>

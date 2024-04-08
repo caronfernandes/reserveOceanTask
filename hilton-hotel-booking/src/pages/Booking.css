@@ -1,0 +1,35 @@
+.booking-check-parent {
+  display: flex;
+  margin: 10px;
+}
+
+.booking-check-parent .jumbotron-form {
+  flex: 1;
+  max-width: 571px;
+}
+.booking-check-parent .room-list-parent {
+  flex: 2;
+}
+
+.booking-check-parent .room-list-parent .rooms .col .col-2 {
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 927px) {
+  .booking-check-parent {
+    flex-direction: column;
+  }
+  .booking-check-parent .jumbotron-form {
+    flex: 1;
+    margin: auto;
+  }
+  .booking-check-parent .room-list-parent {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .booking-check-parent .room-list-parent {
+    margin: 1em 0;
+  }
+}
