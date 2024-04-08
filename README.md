@@ -37,4 +37,5 @@ To start the server application, run the following command:
 
 -  yarn install
 -  yarn dev
+  
 This will start the server application in development mode.
