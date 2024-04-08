@@ -74,8 +74,8 @@ const Home = () => {
             </Link>
           </div>
           <div className="jumbotron-right">
-            <form action="" className="jumbotron-form">
-              {/* Put the form here */}
+            {/* <form action="" className="jumbotron-form">
+         
               <h3>Scared you can't afford it?</h3>
               <br />
               <p>
@@ -116,7 +116,7 @@ const Home = () => {
               <button type="button" className="rates">
                 CHECK AVAILABLITY
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
         {/* Enjoy your stay in our hotel */}
