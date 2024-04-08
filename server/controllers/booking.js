@@ -26,14 +26,14 @@ export const bookReservation = async (req, res) => {
         R.Description AS RoomDescription,
         RT.Description AS RoomTypeDescription
       FROM 
-        Rooms R
+        rooms R
       INNER JOIN 
-        RoomTypes RT ON R.RoomTypeID = RT.RoomTypeID
+        roomtypes RT ON R.RoomTypeID = RT.RoomTypeID
       WHERE 
         R.RoomID = ? AND
         R.RoomID NOT IN (
           SELECT DISTINCT RoomID
-          FROM Bookings
+          FROM bookings
           WHERE 
             (
               CheckInDate BETWEEN ? AND ?
