@@ -34,7 +34,7 @@ const ReservationRegistrationForm = ({
     });
 
   const postUserBookingInfo = () => {
-    const BOOKING_CONFIRM_URL = `/api/v1/booking`;
+    const BOOKING_CONFIRM_URL = `https://reserveoceantask.onrender.com/api/v1/booking`;
     setReservationRegistrationState({
       init: false,
       loading: true,

@@ -23,7 +23,7 @@ const AvailiblityCheck = ({
   });
 
   const fetchRoomAvailablity = () => {
-    const AVAILIBLITYURL = `/api/v1/room/availablity?checkin=${AvailiblityformState.checkin}&checkout=${AvailiblityformState.checkout}&guests=${AvailiblityformState.guests}`;
+    const AVAILIBLITYURL = `https://reserveoceantask.onrender.com/api/v1/room/availablity?checkin=${AvailiblityformState.checkin}&checkout=${AvailiblityformState.checkout}&guests=${AvailiblityformState.guests}`;
     setAvalivlityState({
       init: false,
       loading: true,

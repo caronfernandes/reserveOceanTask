@@ -18,7 +18,7 @@ const SearchBookingDetailsForm = ({ setSearchBookingDetails }) => {
     useState({ email: "" });
 
   const fetchUsersBookingDetails = () => {
-    const SEARCHBOOKINGURL = `/api/v1/booking?email=${searchBookingDetailsFormState.email}`;
+    const SEARCHBOOKINGURL = `https://reserveoceantask.onrender.com/api/v1/booking?email=${searchBookingDetailsFormState.email}`;
     setSearchBookingDetailsState({
       init: false,
       loading: true,
