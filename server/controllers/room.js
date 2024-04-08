@@ -61,6 +61,8 @@ export const getAvailableRooms = async (req, res) => {
       }
     );
   } catch (error) {
+    console.log("getAvailableRoomsErr ", error);
+
     res.status(500).json({ message: "Error fetching available rooms" });
   }
 };
