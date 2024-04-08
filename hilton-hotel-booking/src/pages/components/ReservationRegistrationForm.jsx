@@ -86,15 +86,23 @@ const ReservationRegistrationForm = ({
 
   if (reservationRegistrationState.loading) {
     return (
-      <Oval
-        visible={true}
-        height="80"
-        width="80"
-        color="#d4af37"
-        ariaLabel="oval-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
-      />
+      <div
+        style={{
+          maxWidth: "80px",
+          minHeight: "200px",
+          margin: "auto",
+          marginBottom: "40px",
+        }}>
+        <Oval
+          visible={true}
+          height="80"
+          width="80"
+          color="#d4af37"
+          ariaLabel="oval-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+        />
+      </div>
     );
   }
 
