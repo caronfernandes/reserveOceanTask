@@ -1,8 +1,8 @@
 import mysql from "mysql";
 
 export const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "hilton-hotel",
+  host: "b89bdamdpomdgqnnqkrl-mysql.services.clever-cloud.com",
+  user: "urzbtt5fekhoazu2",
+  password: "b89bdamdpomdgqnnqkrl",
+  database: "b89bdamdpomdgqnnqkrl",
 });
